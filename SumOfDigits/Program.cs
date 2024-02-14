@@ -37,7 +37,9 @@ namespace MyApp
 
             // convert the input string to a number
             int inputNumber = Convert.ToInt32(inputString);
-            int theSumOfDigits = 9999;
+
+            // call a method to calculate the sum of digits from the input number
+            int theSumOfDigits = CalculateSumOfDigits(inputNumber);
 
 
             /*
@@ -45,6 +47,14 @@ namespace MyApp
              * doesn't mistake it for the end of the string
              */
             Console.WriteLine("The sum of the digits is " + theSumOfDigits);
+        }
+
+        static int CalculateSumOfDigits(int inputNumber)
+        {
+            int sum = 0;
+
+
+            return sum;
         }
     }
 }
