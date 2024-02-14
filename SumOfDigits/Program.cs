@@ -52,7 +52,12 @@ namespace MyApp
         static int CalculateSumOfDigits(int inputNumber)
         {
             int sum = 0;
-
+            
+            while(inputNumber > 0)
+            {
+                sum += inputNumber % 10;
+                inputNumber /= 10;
+            }
 
             return sum;
         }
